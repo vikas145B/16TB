@@ -79,7 +79,7 @@ public void captureSc() throws IOException
 {
 	  System.out.println("screenshot capture");
 	  File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	  FileUtils.copyFile(src,new File("C:\\Users\\VIKAS\\OneDrive\\Desktop\\cjc_Testing\\screenshot\\sc.png"));
+	  FileUtils.copyFile(src,new File("C:\Users\VIKAS\OneDrive\Desktop\cjc_Testing\images.png"));
 }
 
 @AfterClass
