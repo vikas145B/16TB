@@ -18,7 +18,7 @@ public class screenshot {
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\VIKAS\\OneDrive\\Desktop\\cjc_Testing\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://github.com/");
+		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
 		System.out.println("web_page  is open");
 		
