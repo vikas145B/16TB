@@ -18,13 +18,14 @@ public class screenshot {
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\VIKAS\\OneDrive\\Desktop\\cjc_Testing\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.amazon.in/");
+		driver.get("https://github.com/features/copilot");
 		driver.manage().window().maximize();
 		System.out.println("web_page  is open");
 		
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	FileUtils.copyFile(src,new File("C:\\Users\\VIKAS\\OneDrive\\Desktop\\cjc_Testing\\screenshot\\image1.png"));
+	FileUtils.copyFile(src,new File("C:\\Users\\VIKAS\\OneDrive\\Desktop\\cjc_Testing\\screenshot\\image2.png"));
+		System.out.println("Screen shot captured");
 		driver.close();
 		
 
