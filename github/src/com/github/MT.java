@@ -52,20 +52,6 @@ public void getCookies()
 	Set<Cookie> ck=driver.manage().getCookies();
 	int count=ck.size();
 	System.out.println(count);
-	
-	for(Cookie cookie : ck )
-	{
-		System.out.println("name of ck"+cookie.getName());
-		System.out.println("class of ck"+cookie.getClass());
-		System.out.println("domain of ck"+cookie.getDomain());
-		System.out.println("value of ck"+cookie.getValue());
-		System.out.println("path of ck"+cookie.getPath());
-		System.out.println("expiry of ck"+cookie.getExpiry());
-		System.out.println("ISHTTPONLY of ck"+cookie.isHttpOnly());
-		System.out.println("ISSecure of ck"+cookie.isSecure());
-		System.out.println("=======");
-	}
-	
 }
 
 @Test
@@ -93,7 +79,7 @@ public void captureSc() throws IOException
 {
 	  System.out.println("screenshot capture");
 	  File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	  FileUtils.copyFile(src,new File("C:\\Users\\VIKAS\\OneDrive\\Desktop\\cjc_Testing\\screenshot\\sc.png"));
+	  FileUtils.copyFile(src,new File("C:\Users\VIKAS\OneDrive\Desktop\cjc_Testing\screenshot\sc.png"));
 }
 
 @AfterClass
